@@ -1,0 +1,7 @@
+1.  junt  @Test  方法一定要是public公开的
+                方法是非静态的，不能加static
+                方法没有返回值 
+                方法上方加@Test注解
+                 
+2.   git log --oneline 只显示当前版本老旧的以前的版本，不显示更新的版本  
+3.   解决合并分支的冲突之后，要git add <file> , git commit <这里不加文件名>
