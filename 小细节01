@@ -10,10 +10,17 @@
      当创建数组的时候，不确定将来数组中存储哪些数据,可以采用动态初始化的方式，预先分配内存空间    int[] a=new int[4];
 6.   
  *  关于String类中的构造方法。
- *  第一个：String s = new String("");
- *  第二个：String s = ""; 最常用
+ *  第一个：String s = new String("");　     String a=new String("hai")  String b=new String("hai") a!=b,a和b指向的是堆内存中的对象地址
+ *  第二个：String s = ""; 最常用        String c="hai" String d="hai" c==d true,c和d都指向字符串常量池中的地址
  *  第三个：String s = new String(char数组);
  *  第四个：String s = new String(char数组,起始下标,长度);
  *  第五个：String s = new String(byte数组);
  *  第六个：String s = new String(byte数组,起始下标,长度)
-7.
+7.  String类的常用方法
+      *1  char string.charAt(int index) 查找string指定索引index的字符。如果index超过了string的长度-1，会报错java.lang.StringIndexOutOfBoundsException
+      *2  int string1.compareTo（string2) 按照字典顺序比较两个字符串的大小，一个字符一个字符比较，相等返回0，string1小于string2返回负数，大于就返回正数
+      *3  boolean string1.contains(string2) 判断string1中是否包含string2
+      *4  boolean string1.endsWith（string2）判断string1是否以string2结尾
+      *5  boolean string1.equalsIgnoreCase（string2）判断两个字符串是否相等，同时忽略大小写
+      *6  byte[] string.getBytes()  将字符串对象转换为字节数组
+      *7  
