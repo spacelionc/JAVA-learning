@@ -1,6 +1,6 @@
-DOM对象是一组我们网页的对象，我们通过DOM对象可以很灵活的去操作网页。BOM对象是我们用来操作浏览器的。DOM和BOM都是es的扩展
-JS的编写位置：
+1. DOM对象是一组我们网页的对象，我们通过DOM对象可以很灵活的去操作网页。BOM对象是我们用来操作浏览器的。DOM和BOM都是es的扩展
+2. JS的编写位置：
     1可以将js编写到网页内部的script标签  <script>alert("哈哈！") </script>
     2.可以将js编写外部的js文件中，然后通过script标签进行引入  <script src="./script/script.js"></script>
     3.可以将js代码编写到指定属性中  A.  <button onclick="alert('你点我干嘛！')">点我一下</button>  B.  <a href="javascript:alert(123);">超链接</a>  C.  <a href="javascript:;">超链接</a>
-
+3.typeof检查的是变量中保存的值的类型，而不是变量的类型，在js中，变量是没有类型的
